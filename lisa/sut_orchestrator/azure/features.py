@@ -3057,7 +3057,7 @@ class AzureExtension(AzureFeatureMixin, Feature):
             extension_parameters=extension_parameters,
         )
 
-        interval = 10
+        interval = 20
         timer = create_timer()
         while timeout >= timer.elapsed(False):
             extension = self.get(name=name)
